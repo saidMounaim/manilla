@@ -1,1 +1,144 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+/** 
+* Start Global Style
+**/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background-color: #f9f7fc;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+small {
+  font-size: 100%;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.primary-btn {
+  width: 170px;
+  height: 50px;
+  background-color: #813afe;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/** 
+* End Global Style
+**/
+/** 
+* Start Header Style
+**/
+header {
+  width: 1180px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu ul li {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  color: #333;
+  position: relative;
+  z-index: 1;
+}
+
+header .menu ul li:after {
+  content: "";
+  width: 0;
+  height: 1.5px;
+  background-color: #813afe;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+header .menu ul li.active:after, header .menu ul li:hover:after {
+  width: 50%;
+}
+
+header .menu ul li:not(:first-child) {
+  margin-left: 50px;
+}
+
+/** 
+* End Header Style
+**/
+/*# sourceMappingURL=styles.css.map */

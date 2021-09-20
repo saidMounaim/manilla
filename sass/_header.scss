@@ -1,0 +1,68 @@
+/** 
+* Start Header Style
+**/
+
+header {
+  width: 1180px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        color: #333;
+        position: relative;
+        z-index: 1;
+
+        &:after {
+          content: "";
+          width: 0;
+          height: 1.5px;
+          background-color: $primaryColor;
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          z-index: -1;
+          transition: 0.5s;
+        }
+
+        &.active,
+        &:hover {
+          &:after {
+            width: 50%;
+          }
+        }
+
+        &:not(:first-child) {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+}
+
+/** 
+* End Header Style
+**/
