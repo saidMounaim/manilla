@@ -1,0 +1,128 @@
+/** 
+* Start Hero Section Style
+**/
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+
+  &:after {
+    content: "";
+    width: 1170px;
+    height: 565px;
+    background-image: url(../images/line-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: -1;
+  }
+
+  .content-hero {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h3 {
+      font-weight: 600;
+      font-size: 35px;
+      letter-spacing: 0.02em;
+      line-height: 30px;
+      color: $primaryColor;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 65px;
+      line-height: 83px;
+      color: #333;
+
+      span {
+        color: $primaryColor;
+      }
+
+      small {
+        position: relative;
+        z-index: 2;
+
+        &:after {
+          content: "";
+          width: 100%;
+          height: 6px;
+          background-color: $secondaryColor;
+          position: absolute;
+          bottom: 13px;
+          left: 0;
+          z-index: -1;
+        }
+      }
+    }
+
+    p {
+      width: 530px;
+      max-width: 95%;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 28px;
+      color: #86888f;
+      margin-top: 20px;
+    }
+
+    .btns {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+
+      button:first-child {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .images-hero {
+    width: 458px;
+    height: 457px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 30px;
+
+    .box {
+      position: absolute;
+      inset: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .image {
+      width: 430px;
+      height: 518px;
+      position: absolute;
+      top: -60px;
+      left: -20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/** 
+* End Hero Section Style
+**/

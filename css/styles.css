@@ -5,21 +5,49 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
   background-color: #f9f7fc;
+  position: relative;
+  z-index: 2;
+  overflow-x: hidden;
+}
+
+body:after,
+body:before {
+  content: "";
+  width: 184px;
+  height: 184px;
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+body:after {
+  top: -100px;
+  left: -90px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='184' height='184' viewBox='0 0 184 184'%3E%3Cg id='Ellipse_532_copy' data-name='Ellipse 532 copy' fill='none' stroke='%23813afe' stroke-width='40' opacity='0.5'%3E%3Ccircle cx='92' cy='92' r='92' stroke='none'/%3E%3Ccircle cx='92' cy='92' r='72' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+body:before {
+  right: -90px;
+  top: -100px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='282' height='282' viewBox='0 0 282 282'%3E%3Ccircle id='Ellipse_532' data-name='Ellipse 532' cx='141' cy='141' r='141' fill='%23813afe' opacity='0.1'/%3E%3C/svg%3E%0A");
 }
 
 a {
+  font-family: inherit;
   text-decoration: none;
   color: inherit;
 }
 
 button {
+  font-family: inherit;
   outline: none;
   border: none;
 }
@@ -43,14 +71,64 @@ li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.secondary-btn {
+  width: 170px;
+  height: 50px;
+  background-color: transparent;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  color: #813afe;
+  border-radius: 5px;
+  border: 1px solid #813afe;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.secondary-btn:hover {
+  background-color: #813afe;
+  border: 1px solid transparent;
+  color: #fff;
+}
+
+.container {
+  width: 1180px;
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 /** 
@@ -67,11 +145,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   top: 25px;
   left: 0;
@@ -84,8 +162,8 @@ header .menu {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 header .menu nav {
@@ -94,8 +172,8 @@ header .menu nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 header .menu ul {
@@ -103,8 +181,8 @@ header .menu ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header .menu ul li {
@@ -130,7 +208,8 @@ header .menu ul li:after {
   transition: 0.5s;
 }
 
-header .menu ul li.active:after, header .menu ul li:hover:after {
+header .menu ul li.active:after,
+header .menu ul li:hover:after {
   width: 50%;
 }
 
@@ -140,5 +219,164 @@ header .menu ul li:not(:first-child) {
 
 /** 
 * End Header Style
+**/
+/** 
+* Start Hero Section Style
+**/
+.hero {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero:after {
+  content: "";
+  width: 1170px;
+  height: 565px;
+  background-image: url(../images/line-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.hero .content-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.hero .info-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.hero .info-hero h3 {
+  font-weight: 600;
+  font-size: 35px;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+  color: #813afe;
+}
+
+.hero .info-hero h1 {
+  font-weight: 600;
+  font-size: 65px;
+  line-height: 83px;
+  color: #333;
+}
+
+.hero .info-hero h1 span {
+  color: #813afe;
+}
+
+.hero .info-hero h1 small {
+  position: relative;
+  z-index: 2;
+}
+
+.hero .info-hero h1 small:after {
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-color: #eaddff;
+  position: absolute;
+  bottom: 13px;
+  left: 0;
+  z-index: -1;
+}
+
+.hero .info-hero p {
+  width: 530px;
+  max-width: 95%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #86888f;
+  margin-top: 20px;
+}
+
+.hero .info-hero .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero .info-hero .btns button:first-child {
+  margin-right: 30px;
+}
+
+.hero .images-hero {
+  width: 458px;
+  height: 457px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  top: 30px;
+}
+
+.hero .images-hero .box {
+  position: absolute;
+  inset: 0;
+}
+
+.hero .images-hero .box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.hero .images-hero .image {
+  width: 430px;
+  height: 518px;
+  position: absolute;
+  top: -60px;
+  left: -20px;
+}
+
+.hero .images-hero .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+/** 
+* End Hero Section Style
 **/
 /*# sourceMappingURL=styles.css.map */
