@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** 
 * Start Global Style
 **/
@@ -5,39 +6,13 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   width: 100%;
   background-color: #f9f7fc;
-  position: relative;
-  z-index: 2;
-  overflow-x: hidden;
-}
-
-body:after,
-body:before {
-  content: "";
-  width: 184px;
-  height: 184px;
-  position: absolute;
-  background-size: cover;
-  background-repeat: no-repeat;
-  z-index: -1;
-}
-
-body:after {
-  top: -100px;
-  left: -90px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='184' height='184' viewBox='0 0 184 184'%3E%3Cg id='Ellipse_532_copy' data-name='Ellipse 532 copy' fill='none' stroke='%23813afe' stroke-width='40' opacity='0.5'%3E%3Ccircle cx='92' cy='92' r='92' stroke='none'/%3E%3Ccircle cx='92' cy='92' r='72' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A");
-}
-
-body:before {
-  right: -90px;
-  top: -100px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='282' height='282' viewBox='0 0 282 282'%3E%3Ccircle id='Ellipse_532' data-name='Ellipse 532' cx='141' cy='141' r='141' fill='%23813afe' opacity='0.1'/%3E%3C/svg%3E%0A");
 }
 
 a {
@@ -71,14 +46,14 @@ li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
@@ -100,14 +75,14 @@ li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
@@ -145,11 +120,11 @@ header {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   top: 25px;
   left: 0;
@@ -162,8 +137,8 @@ header .menu {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 header .menu nav {
@@ -172,8 +147,8 @@ header .menu nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 header .menu ul {
@@ -181,8 +156,8 @@ header .menu ul {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 header .menu ul li {
@@ -208,8 +183,7 @@ header .menu ul li:after {
   transition: 0.5s;
 }
 
-header .menu ul li.active:after,
-header .menu ul li:hover:after {
+header .menu ul li.active:after, header .menu ul li:hover:after {
   width: 50%;
 }
 
@@ -230,11 +204,11 @@ header .menu ul li:not(:first-child) {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
   z-index: 2;
 }
@@ -259,8 +233,8 @@ header .menu ul li:not(:first-child) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hero .info-hero {
@@ -269,11 +243,11 @@ header .menu ul li:not(:first-child) {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .hero .info-hero h3 {
@@ -326,8 +300,8 @@ header .menu ul li:not(:first-child) {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 40px;
 }
 
@@ -343,8 +317,8 @@ header .menu ul li:not(:first-child) {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   top: 30px;
 }
@@ -358,7 +332,7 @@ header .menu ul li:not(:first-child) {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .hero .images-hero .image {
@@ -373,10 +347,241 @@ header .menu ul li:not(:first-child) {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 /** 
 * End Hero Section Style
+**/
+/** 
+* Start About Us Section Style
+**/
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  z-index: 2;
+  position: relative;
+}
+
+.about-us:after, .about-us::before {
+  content: "";
+  width: 288px;
+  height: 39px;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='287.927' height='38.983' viewBox='0 0 287.927 38.983'%3E%3Cg id='Groupe_349' data-name='Groupe 349' transform='translate(28.684 -1704.905)'%3E%3Cpath id='Tracé_91' data-name='Tracé 91' d='M619.316,215.792c15.905,0,15.905,15.6,31.81,15.6s15.9-15.6,31.807-15.6,15.9,15.6,31.808,15.6,15.9-15.6,31.809-15.6,15.9,15.6,31.808,15.6,15.906-15.6,31.813-15.6,15.906,15.6,31.812,15.6' transform='translate(-648 1511)' fill='none' stroke='%23813afe' stroke-miterlimit='10' stroke-width='3' opacity='0.5'/%3E%3Cpath id='Tracé_90' data-name='Tracé 90' d='M684.576,195.4c15.9,0,15.9,15.6,31.809,15.6s15.9-15.6,31.807-15.6S764.1,211,780,211s15.905-15.6,31.809-15.6,15.9,15.6,31.808,15.6,15.907-15.6,31.813-15.6S891.336,211,907.243,211' transform='translate(-648 1511)' fill='none' stroke='%23333' stroke-miterlimit='10' stroke-width='3' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.about-us:before {
+  width: 159px;
+  height: 164px;
+  position: absolute;
+  top: 30px;
+  right: 90px;
+  left: initial;
+  background-image: url(../images/bg-about-us.svg);
+}
+
+.about-us .content-about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-us .header-about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-us .header-about-us span {
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  color: #813afe;
+}
+
+.about-us .header-about-us h2 {
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+  color: #333;
+  margin-top: 3px;
+}
+
+.about-us .blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.about-us .blocks .left-side {
+  width: 390px;
+  height: 400px;
+  position: relative;
+  background-color: grey;
+}
+
+.about-us .blocks .left-side .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.about-us .blocks .left-side .image:after {
+  content: "";
+  width: 237px;
+  height: 400px;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='237' height='400' viewBox='0 0 237 400'%3E%3Cg id='Rectangle_525_copy' data-name='Rectangle 525 copy' fill='none' stroke='%23813afe' stroke-linecap='round' stroke-width='3' stroke-dasharray='10' opacity='0.74'%3E%3Crect width='237' height='400' rx='3' stroke='none'/%3E%3Crect x='1.5' y='1.5' width='234' height='397' rx='1.5' fill='none'/%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.about-us .blocks .left-side .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about-us .blocks .left-side .box-experience {
+  position: absolute;
+  bottom: -40px;
+  left: -86px;
+  padding: 30px;
+  background-color: #813afe;
+  border-radius: 3px;
+}
+
+.about-us .blocks .left-side .box-experience h3 {
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 32px;
+  text-align: center;
+  color: #fff;
+}
+
+.about-us .blocks .left-side .box-experience .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+
+.about-us .blocks .left-side .box-experience .social-media ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-us .blocks .left-side .box-experience .social-media ul li:not(:first-child) {
+  margin-left: 8px;
+}
+
+.about-us .blocks .right-side {
+  width: 564px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-us .blocks .right-side .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-us .blocks .right-side .content span,
+.about-us .blocks .right-side .content p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
+  color: #7e7e7e;
+}
+
+.about-us .blocks .right-side .content span {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.about-us .blocks .right-side .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.about-us .blocks .right-side .btns button:first-child {
+  margin-right: 30px;
+}
+
+/** 
+* End About Us Section Style
 **/
 /*# sourceMappingURL=styles.css.map */
