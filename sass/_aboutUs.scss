@@ -39,28 +39,6 @@
     flex-direction: column;
   }
 
-  .header-about-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    span {
-      font-weight: normal;
-      font-size: 14px;
-      text-align: center;
-      color: #813afe;
-    }
-
-    h2 {
-      font-weight: 500;
-      font-size: 35px;
-      text-align: center;
-      color: #333;
-      margin-top: 3px;
-    }
-  }
-
   .blocks {
     display: flex;
     justify-content: space-evenly;
