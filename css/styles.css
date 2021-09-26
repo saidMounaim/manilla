@@ -729,4 +729,68 @@ header .menu ul li:not(:first-child) {
 /** 
 * End Service Section Style
 **/
+/** 
+* Start Portfolio Section Style
+**/
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 100px;
+  z-index: 2;
+  position: relative;
+}
+
+.portfolio .content-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio .blocks-portfolio {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+.portfolio .blocks-portfolio:before {
+  content: "";
+  width: 159px;
+  height: 164px;
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  background-image: url(../images/bg-about-us.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.portfolio .blocks-portfolio .item {
+  height: 300px;
+}
+
+.portfolio .blocks-portfolio .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/** 
+* End Portfolio Section Style
+**/
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,51 @@
+/** 
+* Start Portfolio Section Style
+**/
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+  z-index: 2;
+  position: relative;
+
+  .content-portfolio {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blocks-portfolio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+
+    &:before {
+      content: "";
+      width: 159px;
+      height: 164px;
+      position: absolute;
+      top: -40px;
+      left: -50px;
+      background-image: url(../images/bg-about-us.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+
+    .item {
+      height: 300px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+/** 
+* End Portfolio Section Style
+**/
