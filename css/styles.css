@@ -10,6 +10,7 @@
 }
 
 body {
+  height: 4000px;
   font-family: "Poppins", sans-serif;
   width: 100%;
   background-color: #f9f7fc;
@@ -792,5 +793,155 @@ header .menu ul li:not(:first-child) {
 
 /** 
 * End Portfolio Section Style
+**/
+/** 
+* Start Hire Me Section Style
+**/
+.hire-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 148px 0;
+  position: relative;
+  z-index: 2;
+  background: #813afe;
+}
+
+.hire-me:after, .hire-me:before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.hire-me:after {
+  width: 68px;
+  height: 68px;
+  top: 30px;
+  right: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='69.227' height='69.227' viewBox='0 0 69.227 69.227'%3E%3Cg id='Groupe_162' data-name='Groupe 162' transform='translate(-679.001 -94.334)' opacity='0.35'%3E%3Ccircle id='Ellipse_266' data-name='Ellipse 266' cx='27.124' cy='27.124' r='27.124' transform='translate(679.001 94.334)' fill='%23fff' opacity='0.43'/%3E%3Ccircle id='Ellipse_267' data-name='Ellipse 267' cx='27.124' cy='27.124' r='27.124' transform='translate(685.8 154.791) rotate(-81.532)' fill='none' stroke='%23ececec' stroke-miterlimit='10' stroke-width='1.378'/%3E%3Ccircle id='Ellipse_268' data-name='Ellipse 268' cx='12.336' cy='12.336' r='12.336' transform='translate(704.287 119.62)' fill='none' stroke='%23e3e3e3' stroke-miterlimit='10' stroke-width='1.378'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.hire-me:before {
+  width: 25px;
+  height: 25px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29.308' height='27.06' viewBox='0 0 29.308 27.06'%3E%3Cg id='Polygone_4' data-name='Polygone 4' transform='translate(4.949) rotate(13)' fill='none' opacity='0.2'%3E%3Cpath d='M17,0a3,3,0,0,1,2.608,1.518l4.545,8a3,3,0,0,1,0,2.964l-4.545,8A3,3,0,0,1,17,22H8a3,3,0,0,1-2.608-1.518l-4.545-8a3,3,0,0,1,0-2.964l4.545-8A3,3,0,0,1,8,0Z' stroke='none'/%3E%3Cpath d='M 7.995889663696289 3.000001907348633 L 3.450429916381836 11.00000095367432 L 7.995889663696289 19 L 17.00411033630371 19 L 21.54957008361816 11.00000095367432 L 17.00411987304688 3.000001907348633 L 7.995889663696289 3.000001907348633 M 7.995889663696289 1.9073486328125e-06 L 17.00411987304688 1.9073486328125e-06 C 18.08330917358398 1.9073486328125e-06 19.07934951782227 0.57965087890625 19.61248016357422 1.517971038818359 L 24.15793991088867 9.517971038818359 C 24.68011093139648 10.43700122833252 24.68011093139648 11.56300067901611 24.15793991088867 12.48203086853027 L 19.61248016357422 20.48203086853027 C 19.07934951782227 21.42034149169922 18.08330917358398 22 17.00411033630371 22 L 7.995889663696289 22 C 6.916679382324219 22 5.920650482177734 21.42034149169922 5.387519836425781 20.48203086853027 L 0.8420600891113281 12.48203086853027 C 0.3198890686035156 11.56300067901611 0.3198890686035156 10.43700122833252 0.8420600891113281 9.517971038818359 L 5.387519836425781 1.517971038818359 C 5.920650482177734 0.57965087890625 6.916690826416016 1.9073486328125e-06 7.995889663696289 1.9073486328125e-06 Z' stroke='none' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E%0A");
+  top: 40px;
+  left: 40px;
+}
+
+.hire-me .content-hire-me {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 110px;
+  margin: auto;
+  width: 970px;
+  max-width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  padding: 70px 0;
+  margin: 0 auto;
+  border-radius: 3px;
+  z-index: 2;
+}
+
+.hire-me .content-hire-me:after {
+  content: "";
+  width: 192px;
+  height: 171px;
+  background-image: url(../images/bg-services.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: -60px;
+  right: 0px;
+  z-index: -1;
+}
+
+.hire-me .content-hire-me h3 {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 30px;
+  text-align: left;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.hire-me .icons {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.hire-me .icon1 {
+  width: 14px;
+  height: 12px;
+  top: 20px;
+  left: 30px;
+  background-image: url(../images/hire-me/icon1.svg);
+}
+
+.hire-me .icon2 {
+  width: 24px;
+  height: 32px;
+  top: 20px;
+  right: 50px;
+  background-image: url(../images/hire-me/icon2.svg);
+}
+
+.hire-me .icon3 {
+  width: 14px;
+  height: 14px;
+  bottom: 20px;
+  right: 40%;
+  background-image: url(../images/hire-me/icon3.svg);
+}
+
+.hire-me .icon4 {
+  width: 65px;
+  height: 31px;
+  bottom: 20px;
+  left: 10px;
+  background-image: url(../images/hire-me/icon4.svg);
+}
+
+.hire-me .icon5 {
+  width: 204px;
+  height: 68px;
+  top: 0;
+  right: -100px;
+  background-image: url(../images/hire-me/icon5.svg);
+}
+
+.hire-me .icon6 {
+  width: 142px;
+  height: 142px;
+  top: -50px;
+  left: -60px;
+  background-image: url(../images/hire-me/icon6.svg);
+}
+
+/** 
+* End Hire Me Section Style
 **/
 /*# sourceMappingURL=styles.css.map */
