@@ -944,4 +944,74 @@ header .menu ul li:not(:first-child) {
 /** 
 * End Hire Me Section Style
 **/
+/** 
+* Start Counter Section Style
+**/
+.counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.counter .content-counter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+.counter .count {
+  font-family: "Poppins", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+.counter .count:after {
+  content: "";
+  width: 70px;
+  height: 18px;
+  background-image: url(../images/icon-count.svg);
+  background-size: cover;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+.counter .count h3 {
+  font-weight: 300;
+  font-size: 55px;
+  text-align: center;
+  color: #333;
+}
+
+.counter .count p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  color: #333;
+}
+
+/** 
+* End Counter Section Style
+**/
 /*# sourceMappingURL=styles.css.map */
