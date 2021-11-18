@@ -1,0 +1,12 @@
+.partenrs {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+
+  .content-partenrs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    opacity: 0.5;
+  }
+}
