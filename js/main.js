@@ -39,3 +39,23 @@ function startCount(el) {
     }
   }, 2000 / number);
 }
+
+/**
+ * SLIDER TESTIMONIALS
+ */
+$("#testimonial-slider").owlCarousel({
+  items: 1,
+  margin: 20,
+  loop: true,
+  nav: false,
+  dots: true,
+  smartSpeed: 2500,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: false,
+  responsive: {
+    768: {
+      items: 2,
+    },
+  },
+});

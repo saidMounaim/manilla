@@ -1,0 +1,76 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+
+  #testimonial-slider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .testimonial {
+    border: 1px solid #c9ced3;
+    border-top: 3px solid #c9ced3;
+    padding: 70px 25px 100px;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after {
+      content: "\f10d";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 30px;
+      color: #813afe;
+      position: absolute;
+      top: 20px;
+      left: 25px;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #666;
+      line-height: 26px;
+    }
+    .pic {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: -30px;
+      left: 25px;
+    }
+    .pic img {
+      width: 100%;
+      height: auto;
+    }
+    .testimonial-title {
+      font-size: 20px;
+      color: #000;
+      position: absolute;
+      bottom: 20px;
+      left: 150px;
+    }
+    .testimonial-title small {
+      display: block;
+      font-size: 14px;
+      color: #666;
+      margin-top: 7px;
+    }
+  }
+
+  .owl-dots {
+    display: block;
+    margin-top: 50px !important;
+
+    .owl-dot span {
+      background-color: #be99fe;
+      transition: 0.4s;
+    }
+
+    .owl-dot.active span,
+    .owl-dot:hover span {
+      background-color: #813afe;
+    }
+  }
+}

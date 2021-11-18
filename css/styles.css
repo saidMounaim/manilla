@@ -1014,4 +1014,95 @@ header .menu ul li:not(:first-child) {
 /** 
 * End Counter Section Style
 **/
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px 0;
+}
+
+.testimonials #testimonial-slider {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
+}
+
+.testimonials .testimonial {
+  border: 1px solid #c9ced3;
+  border-top: 3px solid #c9ced3;
+  padding: 70px 25px 100px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.testimonials .testimonial::after {
+  content: "\f10d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 30px;
+  color: #813afe;
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+.testimonials .testimonial .description {
+  font-size: 14px;
+  color: #666;
+  line-height: 26px;
+}
+
+.testimonials .testimonial .pic {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -30px;
+  left: 25px;
+}
+
+.testimonials .testimonial .pic img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonials .testimonial .testimonial-title {
+  font-size: 20px;
+  color: #000;
+  position: absolute;
+  bottom: 20px;
+  left: 150px;
+}
+
+.testimonials .testimonial .testimonial-title small {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 7px;
+}
+
+.testimonials .owl-dots {
+  display: block;
+  margin-top: 50px !important;
+}
+
+.testimonials .owl-dots .owl-dot span {
+  background-color: #be99fe;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.testimonials .owl-dots .owl-dot.active span,
+.testimonials .owl-dots .owl-dot:hover span {
+  background-color: #813afe;
+}
 /*# sourceMappingURL=styles.css.map */
