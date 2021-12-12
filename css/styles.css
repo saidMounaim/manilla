@@ -1126,4 +1126,168 @@ header .menu ul li:not(:first-child) {
   grid-gap: 20px;
   opacity: 0.5;
 }
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 0;
+  position: relative;
+}
+
+.contact:after {
+  content: "";
+  width: 204px;
+  height: 75px;
+  position: absolute;
+  top: 50%;
+  left: -100px;
+  background-image: url(../images/contact/icon-1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact .content-contact {
+  width: 770px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 3px;
+  background: #fff;
+  -webkit-box-shadow: 0px 10px 60px rgba(36, 0, 100, 0.13);
+          box-shadow: 0px 10px 60px rgba(36, 0, 100, 0.13);
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.contact .content-contact:before {
+  content: "";
+  width: 126px;
+  height: 130px;
+  position: absolute;
+  top: -40px;
+  left: -50px;
+  background-image: url(../images/bg-about-us.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.contact .content-contact:after {
+  content: "";
+  width: 142px;
+  height: 142px;
+  position: absolute;
+  bottom: -50px;
+  right: -60px;
+  background-image: url(../images/contact/icon-2.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.contact .header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .header-contact h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  color: #813afe;
+}
+
+.contact .mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.contact .mail a {
+  font-weight: 300;
+  font-size: 45px;
+  line-height: 30px;
+  text-align: center;
+  color: #7e7e7e;
+}
+
+.contact .social-media-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+.contact .social-media-contact ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .social-media-contact ul li {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  -webkit-filter: drop-shadow(0px 1px 20px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 1px 20px rgba(0, 0, 0, 0.1));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+.contact .social-media-contact ul li a {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=styles.css.map */
