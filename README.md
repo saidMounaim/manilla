@@ -8,4 +8,4 @@ Manilla for modern trend, Personal Portfolio Landing Page. It is 100% responsive
   </kbd>
 </p>
 
-### To view a live example, **[click here](https://manilla-portfolio.netlify.app/)**.
+### To view a portolio, **[click here](https://manilla-portfolio.netlify.app/)**.
