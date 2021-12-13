@@ -1,4 +1,48 @@
 /**
+ * LOCOMOTIVE SCROLL
+ */
+const scroller = new LocomotiveScroll({
+  el: document.querySelector("[data-scroll-container]"),
+  smooth: true,
+  inertia: 0.6,
+  initClass: "fadeIn",
+});
+
+/**
+ * DISABLED LOCOMOTIVE ON VERSION MOBILE
+ */
+if ($(window).width() <= 1024) {
+  const scroller = new LocomotiveScroll({
+    el: document.querySelector("[data-scroll-container]"),
+    smooth: false,
+  });
+}
+
+gsap.registerPlugin(ScrollTrigger);
+
+scroller.on("scroll", ScrollTrigger.update);
+
+ScrollTrigger.scrollerProxy(".data-scrolling", {
+  scrollTop(value) {
+    return arguments.length
+      ? scroller.scrollTo(value, 0, 0)
+      : scroller.scroll.instance.scroll.y;
+  },
+  getBoundingClientRect() {
+    return {
+      left: 0,
+      top: 0,
+      width: window.innerWidth,
+      height: window.innerHeight,
+    };
+  },
+});
+
+ScrollTrigger.addEventListener("refresh", () => scroller.update());
+
+ScrollTrigger.refresh();
+
+/**
  * Slider Services
  */
 $("#services").owlCarousel({
@@ -23,32 +67,6 @@ $("#services").owlCarousel({
     },
   },
 });
-
-/**
- * COUNTER SECTION
- */
-let nums = document.querySelectorAll(".counter .counter-number");
-let sectionCounter = document.querySelector(".counter");
-let started = false; // Function Started ? No
-
-window.onscroll = function () {
-  if (window.scrollY >= sectionCounter.offsetTop - 300) {
-    if (!started) {
-      nums.forEach((num) => startCount(num));
-    }
-    started = true;
-  }
-};
-
-function startCount(el) {
-  let number = el.dataset.number;
-  let count = setInterval(() => {
-    el.textContent++;
-    if (el.textContent == number) {
-      clearInterval(count);
-    }
-  }, 2000 / number);
-}
 
 /**
  * SLIDER TESTIMONIALS
