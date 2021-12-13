@@ -3,7 +3,6 @@
  */
 $("#services").owlCarousel({
   stagePadding: 14,
-  item: 3,
   margin: 20,
   loop: true,
   nav: false,
@@ -12,6 +11,17 @@ $("#services").owlCarousel({
   autoplay: true,
   autoplayTimeout: 5000,
   autoplayHoverPause: false,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    768: {
+      items: 2,
+    },
+    1200: {
+      items: 3,
+    },
+  },
 });
 
 /**
